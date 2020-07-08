@@ -1,15 +1,16 @@
 var mail = prompt('Inserisci l\'email');
 var lista = ['mario.rossi@boolean.com', 'pippo.franco@boolean.com', 'enrico.boldi@boolean.com', 'iva.zanicchi@boolean.com', 'beppe.fiore@boolean.com'];
-var controlla;
+var trovata = false;
 
 
 for (var i = 0; i < lista.length; i++) {
     if (lista[i] == mail){
-        controlla = 'valida';
-    }
-    else {
-        controlla = 'non valida';
+        trovata = true;
     }
 }
 
-console.log(controlla);
+if (trovata == true){
+    alert('valida');
+} else {
+    alert('non valida');
+}

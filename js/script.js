@@ -38,18 +38,21 @@
 
 // con due dadi ciascuno
 
-
+// inizializzazioni var dadi
 var dadoUtente1 = Math.floor(Math.random()*6) + 1;
 var dadoUtente2 = Math.floor(Math.random()*6) + 1;
 var dadoPc1 = Math.floor(Math.random()*6) + 1;
 var dadoPc2 = Math.floor(Math.random()*6) + 1;
 
+//somma dei due dadi sia dell'utente che del pc
 var sommaUtente = dadoUtente1 + dadoUtente2;
 var sommaPc = dadoPc1 + dadoPc2;
 
+//alert del risultato ottenuto
 alert('I dadi del giocatore hanno totalizzato: ' + sommaUtente);
 alert('I dadi del pc hanno totalizzato: ' + sommaPc);
 
+//valutazione vincitore
 if(sommaUtente > sommaPc){
     alert('Vince il giocatore');
 } else if(sommaUtente < sommaPc){
